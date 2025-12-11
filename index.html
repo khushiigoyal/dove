@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dove Company - Real Beauty Project Level 4</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+
+    <style>
+        /* (CSS styles remain the same for aesthetics, only new link style added) */
+        
+        /* ------------------------------------------------------------------
+           GLOBAL & BACKGROUND STYLING
+           ------------------------------------------------------------------ */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://lipstiq.com/wp-content/uploads/2017/08/Dove-IamRealBeauty-Campaign_Eng.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .page-content {
+            background-color: rgba(0, 0, 0, 0.6); 
+            min-height: 100vh; 
+            padding: 120px 20px 50px 20px; 
+            color: #f0f0f0;
+        }
+
+        .content-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* ------------------------------------------------------------------
+           HEADER AND NAVIGATION (Unchanged)
+           ------------------------------------------------------------------ */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #FFFFFF;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            padding: 10px 40px; 
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .logo-group { display: flex; align-items: center; gap: 15px; }
+        .logo-group img { height: 60px; width: auto; transition: 0.4s; cursor: pointer; }
+        .logo-group h1 { font-size: 40px; margin: 0; font-family: 'Petit Formal Script', cursive; color: rgb(70, 61, 185); }
+        nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 30px; }
+        nav a { font-family: 'Roboto', sans-serif; text-decoration: none; color: rgb(70, 61, 185); font-weight: 400; padding: 5px 10px; border-radius: 5px; transition: background-color 0.3s, color 0.3s; }
+        nav a:hover { background-color: rgb(70, 61, 185); color: white; }
+
+        /* ------------------------------------------------------------------
+           CONTENT ELEMENTS (Sections, Articles, Asides)
+           ------------------------------------------------------------------ */
+        
+        h2 {
+            font-family: 'Cormorant Garamond', serif;
+            color: #FFFFFF;
+            border-bottom: 2px solid #a3b1d3;
+            padding-bottom: 5px;
+            margin-top: 50px; 
+            font-weight: 600;
+            font-size: 2.2em;
+            letter-spacing: 2px;
+        }
+        
+        .content-wrapper > main > section:first-child h2 {
+            margin-top: 0;
+        }
+        
+        /* New Link Style for Headings */
+        .content-section a {
+            text-decoration: none;
+            color: inherit; /* Keep the color white */
+            transition: color 0.3s;
+        }
+
+        .content-section a:hover {
+            color: #a3b1d3; /* Subtle hover effect */
+        }
+
+        p { font-weight: 300; line-height: 1.6; }
+        aside { background: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 8px; margin-top: 20px; border-left: 5px solid #a3b1d3; color: #FFFFFF; }
+        aside h3 { font-family: 'Cormorant Garamond', serif; color: #FFFFFF; font-weight: 600; }
+
+        /* ------------------------------------------------------------------
+           DIV GROUPING AND FOOTER (Unchanged)
+           ------------------------------------------------------------------ */
+        .team-group { margin-top: 20px; display: flex; justify-content: center; gap: 25px; padding: 20px 0; }
+        .team-group img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid #a3b1d3; box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); transition: 0.3s ease; cursor: pointer; }
+        .team-group img:hover { transform: scale(1.15); box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); }
+        footer { text-align: center; padding: 20px; font-size: 14px; color: white; background: #111111; margin-top: 0; }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-group">
+            <a href="https://www.dove.com/" target="_blank">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.zKUIt10GhZpB_AN5Ld9d1QHaD3?pid=Api&P=0&h=180" alt="Dove Logo">
+            </a>
+            <h1>Dove</h1>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="https://www.dove.com/us/en/about-us.html" target="_blank">About</a></li>
+                <li><a href="https://www.dove.com/us/en/products.html" target="_blank">Products</a></li>
+                <li><a href="https://www.dove.com/us/en/stories/real-beauty.html" target="_blank">Info</a></li>
+                <li><a href="https://www.dove.com/us/en/contact-us.html" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-content">
+        <div class="content-wrapper">
+            <main>
+                <section id="about" class="content-section">
+                    <a href="https://www.dove.com/us/en/about-us.html" target="_blank">
+                        <h2>About Dove</h2>
+                    </a>
+                    <article>
+                        <p>
+                            Dove is a globally trusted personal care brand known for its gentle, nourishing, and dermatologically tested products. Launched in 1957, Dove has grown into one of the world’s most loved brands for skincare and haircare. With its signature 1/4 moisturizing cream formula, Dove focuses on providing real care that leaves skin soft, healthy, and hydrated.
+                        </p>
+                        <p>
+                            Dove is committed to promoting *real beauty*, body positivity, and self-confidence. Through campaigns like the Dove Real Beauty initiative, the brand encourages people to embrace and celebrate who they truly are. Their products are designed for everyday use and are suitable for all skin types, including sensitive skin.
+                        </p>
+                    </article>
+
+                    <aside>
+                        <h3>Fun Fact</h3>
+                        <p>The name 'Dove' (the bird) symbolizes peace and purity, reflecting the brand's gentle and clean approach to personal care.</p>
+                    </aside>
+                </section>
+
+                <section id="products" class="content-section">
+                    <a href="https://www.dove.com/us/en/products.html" target="_blank">
+                        <h2>Our Product Philosophy</h2>
+                    </a>
+                    <p>Dove’s wide range includes beauty bars, body washes, shampoos, conditioners, deodorants, lotions, and baby care products. Each item is crafted with gentle ingredients and backed by dermatological expertise to ensure safe, effective care for everyone.</p>
+                </section>
+
+                <section id="info" class="content-section">
+                    <a href="https://www.dove.com/us/en/stories/real-beauty.html" target="_blank">
+                        <h2>General Information</h2>
+                    </a>
+                    <article>
+                        <p>
+                            This section includes general updates, announcements, and information related to our company's mission and ongoing projects.
+                        </p>
+
+                        <h3>Our Faces of Dove</h3>
+                        <div class="team-group">
+                            <a href="#"><img src="https://randomuser.me/api/portraits/women/10.jpg" alt="Team Member 1"></a>
+                            <a href="#"><img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Team Member 2"></a>
+                            <a href="#"><img src="https://randomuser.me/api/portraits/women/31.jpg" alt="Team Member 3"></a>
+                            <a href="#"><img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Team Member 4"></a>
+                            <a href="#"><img src="https://randomuser.me/api/portraits/women/52.jpg" alt="Team Member 5"></a>
+                        </div>
+                    </article>
+                </section>
+                
+                <section id="contact" class="content-section">
+                    <a href="https://www.dove.com/us/en/contact-us.html" target="_blank">
+                        <h2>Contact Us</h2>
+                    </a>
+                    <p>Email: *company@example.com*</p>
+                    <p>Phone: *+91 9876543210*</p>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Dove Company. All rights reserved. | Designed with ❤
+    </footer>
+
+</body>
+</html>
